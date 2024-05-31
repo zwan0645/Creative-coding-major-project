@@ -57,7 +57,7 @@ class Line {
       this.x2 = newOffsetX2 + mouseXCoord;
       this.y2 = newOffsetY2 + mouseYCoord;
 
-      this.thickness = 20; // Set the thickness of the line segment, you can adjust it as needed
+      this.thickness = 20; // Set the thickness of the line segment
     } else {
       // Update moving direction based on the angle of the line
       let angle = atan2(this.y2 - this.y1, this.x2 - this.x1);
@@ -110,7 +110,7 @@ function draw() {
 
     // Draw circle following mouse
     noStroke(); // Remove stroke
-    fill(200, 200, 200, 2); // Set fill color to gray with 70% opacity
+    fill(200, 200, 200, 2); // Set fill color
     circle(mouseXCoord, mouseYCoord, circleRadius * 2);
 
     // Draw pointillism background of Tower
