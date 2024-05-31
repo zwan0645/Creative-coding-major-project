@@ -1,12 +1,27 @@
 # Creative-coding-major-project
 **Instructions**
 - Slowly move the mouse on the screen, you can change the effect of brush strokes; hold and drag the mouse to change the line to change the overall line rendering effect; press the number "1" will change the color of the line, you can also drag the mouse; press the number "2" will generate a misty effect, press the number "0" to clear all the effects; press the space bar to present the original work.
-
+```
+  function keyPressed() {
+    if (key === ' ') { // Check if space bar is pressed
+      showOriginal = !showOriginal; // Toggle state
+    }
+    if (key === '1') { // Press 1 to switch to effect 1
+      specialEffect = 1;
+    }
+    if (key === '2') { // Press 2 to switch to effect 2
+      specialEffect = 2;
+    }
+    if (key === '0') { // Press 0 to disable effect
+      specialEffect = 0;
+    }
+  }
+```
 **Details of animating**
 
 - Individual code: interaction
 
-- When the mouse is hovered over the screen, the original drawing will be changed, and the area where the mouse is hovered over will become a rotating effect centered on the mouse. Dragging the mouse at this point will thicken all the line segments, making the whole thing blurry. Pressing the number "1" will change the line segments to a random color that is continuously refreshed, and dragging the mouse at this time will have the same thickening effect. Pressing number "2" will cause a mist-like effect to appear on the canvas, and you can see through the mist to see the painting behind it by using the mouse to cover the area ![mist](asset/mist.png). Pressing the number 0 will clear the effect of "1","2". You can also interact with the keyboard by pressing the space bar to display the original drawing and again to return to the drawing screen.
+- When the mouse is hovered over the screen, the original drawing will be changed, and the area where the mouse is hovered over will become a rotating effect centered on the mouse. Dragging the mouse at this point will thicken all the line segments, making the whole thing blurry. Pressing the number "1" will change the line segments to a random color that is continuously refreshed, and dragging the mouse at this time will have the same thickening effect. Pressing number "2" will cause a mist-like effect to appear on the canvas, and you can see through the mist to see the painting behind it by using the mouse to cover the area. ![mist](asset/mist.png) Pressing the number 0 will clear the effect of "1","2". You can also interact with the keyboard by pressing the space bar to display the original drawing and again to return to the drawing screen.
 
 
 ![inspiration starry night](asset/inspiration%20starry%20night.png)
