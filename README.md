@@ -2,7 +2,7 @@
 **Instructions**
 - Slowly move the mouse on the screen, you can change the effect of brush strokes; hold and drag the mouse to change the line to change the overall line rendering effect; press the number "1" will change the color of the line, you can also drag the mouse; press the number "2" will generate a misty effect, press the number "0" to clear all the effects; press the space bar to present the original work.
 
-Details of animating
+**Details of animating**
 
 - Individual code: interaction
 
